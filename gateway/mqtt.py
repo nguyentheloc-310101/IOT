@@ -25,7 +25,9 @@ class MQTTClient:
             cls._instance.mqtt_username = mqtt_username
             cls._instance.mqtt_password = mqtt_password
 
-            cls._instance.client = mqttClient.Client()
+            cls._instance.client = mqttClient.Client(
+                mqttClient.CallbackAPIVersion.VERSION1
+            )
             cls._instance.client.on_connect = cls._instance.on_connect
             cls._instance.client.on_message = cls._instance.on_message
             cls._instance.client.on_subscribe = cls._instance.on_subscribe
