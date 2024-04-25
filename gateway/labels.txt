@@ -1,3 +1,2 @@
-0 Khong Khau Trang
-1 Co Khau Trang
-2 Khong Co Nguoi
+0 Has people
+1 No people
