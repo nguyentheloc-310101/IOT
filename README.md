@@ -1,4 +1,5 @@
-# iot_lab
+# IOTs Dashboard sending & receiving data from sensor using virtual serial ports
+
 
 Use Com0com for making virtual serial ports for sensor (devices). COM1 and COM2
 Use Hercules for sending and receiving data (play as sensor role).
