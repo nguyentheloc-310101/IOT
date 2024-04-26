@@ -38,7 +38,7 @@ class MQTTService {
       ..onConnected = onConnected;
 
     final connMess = MqttConnectMessage()
-        .authenticateAs('theloc3101', 'aio_SlmH24PWIaaibxfnA9NiV4qjZLbv')
+        .authenticateAs('user_name_adafruit', 'adafruit_io_key')
         .withWillTopic('willTopic')
         .withWillMessage('willMessage')
         .startClean()
