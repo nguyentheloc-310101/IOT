@@ -38,7 +38,7 @@ class MQTTService {
       ..onConnected = onConnected;
 
     final connMess = MqttConnectMessage()
-        .authenticateAs('theloc3101', 'aio_CPkE1097ydsUDudumx04uB8Qv3ci')
+        .authenticateAs('theloc3101', 'aio_SlmH24PWIaaibxfnA9NiV4qjZLbv')
         .withWillTopic('willTopic')
         .withWillMessage('willMessage')
         .startClean()

@@ -58,11 +58,16 @@ class MQTTClient:
         elif(str(msg.topic) =="theloc3101/feeds/button2"):
             topicSub = "BUMP_BUTTON_FEED"
         print("Received " + payload + " from " + topicSub)
-        # if (str(msg.topic) == "theloc3101/feeds/button-light"):
-        #     if payload == "0":
-        #         self.recvCallBack("1")
-        #     else:
-        #         self.recvCallBack("2")
+        if (str(msg.topic) == "theloc3101/feeds/button-light"):
+            if payload == "0":
+                self.recvCallBack("button-light-off")
+            else:
+                self.recvCallBack("button-light-on")
+        elif (str(msg.topic) == "theloc3101/feeds/button2"):
+            if payload == "0":
+                self.recvCallBack("button-bump-off")
+            else:
+                self.recvCallBack("button-bump-on")
        
                 
 
